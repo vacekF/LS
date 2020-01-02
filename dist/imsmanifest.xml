@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<manifest identifier="com.scorm.manifesttemplates.scorm12" version="1"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                           http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                           http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+    </metadata>
+    <organizations default="B0">
+        <organization identifier="B0">
+            <title>Simple Learning Framework</title>
+            <item identifier="i1" identifierref="r1" isvisible="true">
+                <title>Simple Learning Framework</title>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+            <file href="css/app.351dc836.css"/>
+            <file href="css/chunk-1b9f6a7c.b373a858.css"/>
+            <file href="css/chunk-20d3d105.654a67a3.css"/>
+            <file href="css/chunk-220f3fa6.271579bc.css"/>
+            <file href="css/chunk-fd44fc0c.8e000aa3.css"/>
+            <file href="css/chunk-vendors.7270f6b3.css"/>
+            <file href="css/en.e00b1192.css"/>
+            <file href="css/en~fr_ca.9dac160b.css"/>
+            <file href="css/fr_ca.547c39d0.css"/>
+            <file href="favicon.ico"/>
+            <file href="img/bg1.4444ed7f.jpg"/>
+            <file href="img/bg1f.40366840.jpg"/>
+            <file href="img/bg1f1.eeb2c7e7.jpg"/>
+            <file href="img/bg2.a8eb2a88.jpg"/>
+            <file href="img/bg2p.7b9b2e0c.jpg"/>
+            <file href="img/bg3.7e2c9c42.jpg"/>
+            <file href="img/bg4.49e19bc8.jpg"/>
+            <file href="img/bg5.445a34b5.jpg"/>
+            <file href="img/bg5p.239ce8ac.jpg"/>
+            <file href="img/bg6.127b77ee.jpg"/>
+            <file href="img/bg6p.5586e98c.jpg"/>
+            <file href="img/bg7.0cc76008.jpg"/>
+            <file href="img/bg8.38d40801.jpg"/>
+            <file href="imsmanifest.xml"/>
+            <file href="index.html"/>
+            <file href="js/app.e2185ee2.js"/>
+            <file href="js/app.e2185ee2.js.map"/>
+            <file href="js/chunk-1b9f6a7c.496e9703.js"/>
+            <file href="js/chunk-1b9f6a7c.496e9703.js.map"/>
+            <file href="js/chunk-20d3d105.7604d4b5.js"/>
+            <file href="js/chunk-20d3d105.7604d4b5.js.map"/>
+            <file href="js/chunk-220f3fa6.f798b1d9.js"/>
+            <file href="js/chunk-220f3fa6.f798b1d9.js.map"/>
+            <file href="js/chunk-fd44fc0c.1f1fe15b.js"/>
+            <file href="js/chunk-fd44fc0c.1f1fe15b.js.map"/>
+            <file href="js/chunk-vendors.d4a852fa.js"/>
+            <file href="js/chunk-vendors.d4a852fa.js.map"/>
+            <file href="js/en.f0e85731.js"/>
+            <file href="js/en.f0e85731.js.map"/>
+            <file href="js/en~fr_ca.32949624.js"/>
+            <file href="js/en~fr_ca.32949624.js.map"/>
+            <file href="js/fr_ca.952c733f.js"/>
+            <file href="js/fr_ca.952c733f.js.map"/>
+            <file href="schema/adlcp_rootv1p2.xsd"/>
+            <file href="schema/imscp_rootv1p1p2.xsd"/>
+            <file href="schema/imsmd_rootv1p2p1.xsd"/>
+            <file href="schema/ims_xml.xsd"/>
+        </resource>
+    </resources>
+</manifest>
