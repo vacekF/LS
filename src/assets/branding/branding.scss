@@ -1,0 +1,91 @@
+$colors: (
+        "primary": #343735,
+        "secondary": #52af8a,
+        "statusbar": #008000,
+        "highlight": #12c980,
+        "component_chrome": #52af8a,
+        "component_chrome_complete": #343735,
+        "badge_complete": #6A737B,
+        "watched_panel": #939598,
+        "watched_page": #939598,
+        "pass_green": #12c980,
+        "fail_red": #A03522,
+        "primary_orange": #F15D22,
+        "primary_blue": #0093D0,
+        "primary_gray": #6A737B,
+        "primary_gray_dark": #343735,
+        "primary_gray_medium": #939598,
+        "primary_gray_light": #C7C8CA,
+        "support_orange": #D64918,
+        "support_blue": #00447C,
+        "support_purple": #54075B,
+        "support_green": #679940,
+        "support_green1": #024602,
+        "support_red": #ff0000,
+        "support_rust": #A03522,
+        "support_gold": #E7A614,
+        "support_yellow": #f6f7e1,
+        "black_dark": #000000,
+        "black_off": #343735,
+        "white_bright": #FFFFFF,
+        "white_off": #EAEEEA,
+        "text": #333333,
+        "text_inverse":#FBFBFB,
+        "gray_light":#EEEEEE,
+);
+
+$padding-top: 2rem;
+$padding-right: 2rem;
+$padding-bottom: 2rem;
+$padding-left: 2rem;
+
+$margin-top: 2rem;
+$margin-right: 2rem;
+$margin-bottom: 2rem;
+$margin-left: 2rem;
+
+$tablet_breakpoint: 768px;
+$desktop_breakpoint: 1024px;
+
+$font-min: 12px;
+$font-max: 18px;
+$font-grow: 2vw;
+
+$p_default: 100%;
+$p_tablet: 100%;
+$p_desktop: 100%;
+$p_line_height: 1.35;
+$p_margin_bottom: 1;
+
+$li_default: 100%;
+$li_tablet: 100%;
+$li_desktop: 100%;
+$li_line_height: 1.2;
+$li_margin_bottom: 0.25;
+
+$h1_default: 160%;
+$h1_tablet: 170%;
+$h1_desktop: 180%;
+$h1_line_height: 1.0;
+$h1_margin_bottom: 1;
+
+$h2_default: 130%;
+$h2_tablet: 140%;
+$h2_desktop: 150%;
+$h2_line_height: 1.0;
+$h2_margin_bottom: 1;
+
+$h3_default: 110%;
+$h3_tablet: 120%;
+$h3_desktop: 130%;
+$h3_line_height: 1.0;
+$h3_margin_bottom: 1;
+
+$button_default: 100%;
+$button_tablet: 100%;
+$button_desktop: 100%;
+$button_line_height: 1.0;
+$button_margin_bottom: 1;
+
+$ul_style: square;
+$ol_style: decimal;

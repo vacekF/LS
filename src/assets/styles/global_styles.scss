@@ -1,0 +1,145 @@
+@import '../branding/branding';
+
+@mixin responsive-text($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+@mixin text-ratio () {
+  p{
+    @include phone {
+      font-size: $p_default;
+      line-height: $p_line_height;
+      margin-bottom: $p_margin_bottom+rem;
+    }
+    @include tablet {
+      font-size: $p_tablet;
+      line-height: $p_line_height;
+      margin-bottom: $p_margin_bottom+rem;
+    }
+    @include desktop {
+      font-size: $p_desktop;
+      line-height: $p_line_height;
+      margin-bottom: $p_margin_bottom+rem;
+    }
+  }
+  li{
+    @include phone {
+      font-size: $li_default;
+      line-height: $li_line_height;
+      margin-bottom: $li_margin_bottom+rem;
+    }
+    @include tablet {
+      font-size: $li_tablet;
+      line-height: $li_line_height;
+      margin-bottom: $li_margin_bottom+rem;
+    }
+    @include desktop {
+      font-size: $li_desktop;
+      line-height: $li_line_height;
+      margin-bottom: $li_margin_bottom+rem;
+    }
+  }
+  h1{
+    @include phone {
+      font-size: $h1_default;
+      line-height: $h1_line_height;
+      margin-bottom: $h1_margin_bottom+rem;
+    }
+    @include tablet {
+      font-size: $h1_tablet;
+      line-height: $h1_line_height;
+      margin-bottom: $h1_margin_bottom+rem;
+    }
+    @include desktop {
+      font-size: $h1_desktop;
+      line-height: $h1_line_height;
+      margin-bottom: $h1_margin_bottom+rem;
+    }
+  }
+  h2{
+    @include phone {
+      font-size: $h2_default;
+      line-height: $h2_line_height;
+      margin-bottom: $h2_margin_bottom+rem;
+    }
+    @include tablet {
+      font-size: $h2_tablet;
+      line-height: $h2_line_height;
+      margin-bottom: $h2_margin_bottom+rem;
+    }
+    @include desktop {
+      font-size: $h2_desktop;
+      line-height: $h2_line_height;
+      margin-bottom: $h2_margin_bottom+rem;
+    }
+  }
+  h3{
+    @include phone {
+      font-size: $h3_default;
+      line-height: $h3_line_height;
+      margin-bottom: $h3_margin_bottom+rem;
+    }
+    @include tablet {
+      font-size: $h3_tablet;
+      line-height: $h3_line_height;
+      margin-bottom: $h3_margin_bottom+rem;
+    }
+    @include desktop {
+      font-size: $h3_desktop;
+      line-height: $h3_line_height;
+      margin-bottom: $h3_margin_bottom+rem;
+    }
+  }
+  button{
+    @include phone {
+      font-size: $button_default;
+      line-height: $button_line_height;
+      margin-bottom: $button_margin_bottom+rem;
+    }
+    @include tablet {
+      font-size: $button_tablet;
+      line-height: $button_line_height;
+      margin-bottom: $button_margin_bottom+rem;
+    }
+    @include desktop {
+      font-size: $button_desktop;
+      line-height: $button_line_height;
+      margin-bottom: $button_margin_bottom+rem;
+    }
+  }
+  ul{
+    list-style: $ul_style;
+  }
+  ol{
+    list-style: $ol_style;
+  }
+}
+
+@mixin text-styles () {
+  .bold{
+    font-weight: bold;
+  }
+  .italic{
+    font-style: italic;
+  }
+}

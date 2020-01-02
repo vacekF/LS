@@ -1,0 +1,25 @@
+@import '../../../branding/branding';
+@import '../../style_utils';
+
+@mixin menu_tiles () {
+  @include padding(2.5, 2.5, 2.5, 2.5);
+  box-sizing: border-box;
+  gap:2.5rem;
+  @include phone {
+    width:100%;
+    gap:1.5rem;
+    @include columns(false, 1, 1);
+    grid-auto-rows: 12rem;
+  }
+  @include tablet {
+    width:100%;
+    gap:1rem;
+    @include columns(false, 1, 1, 1);
+    grid-auto-rows: 13rem;
+  }
+  @include desktop {
+    width:100%;
+    @include columns(false, 1, 1, 1);
+    grid-auto-rows: 13rem;
+  }
+}

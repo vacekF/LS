@@ -1,0 +1,15 @@
+.slide-back-enter-active, .slide-back-leave-active{
+  transition: transform 0.5s;
+}
+.slide-back-enter{
+  transform: translateX(-100%);
+}
+.slide-back-enter-to{
+  transform: translateX(0%);
+}
+.slide-back-leave{
+  transform: translateX(0%);
+}
+.slide-back-leave-to{
+  transform: translateX(100%);
+}

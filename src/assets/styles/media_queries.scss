@@ -1,0 +1,31 @@
+@import '../branding/branding';
+
+@mixin phone {
+  @media (max-width: #{$tablet_breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet_breakpoint}) and (max-width: #{$desktop_breakpoint - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop_breakpoint}) {
+    @content;
+  }
+}
+
+@mixin tablet-desktop {
+  @media (min-width: #{$tablet_breakpoint}) {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}

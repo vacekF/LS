@@ -1,0 +1,11 @@
+*.story filter=lfs diff=lfs merge=lfs -text
+*.cptx filter=lfs diff=lfs merge=lfs -text
+*.awt filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.indd filter=lfs diff=lfs merge=lfs -text

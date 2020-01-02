@@ -1,0 +1,34 @@
+.flip-forward-enter-active, .flip-forward-leave-active{
+  transition: transform 1.0s ease-in-out;
+  backface-visibility: hidden;
+  perspective-origin: center;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  @include ie {
+    transition: transform 1.0s ease-in-out, opacity 1.0s ease-in-out;
+  }
+}
+.flip-forward-enter{
+  transform: perspective(800px) rotateY(180deg);
+  @include ie {
+    opacity: 0;
+  }
+}
+.flip-forward-enter-to{
+  transform: perspective(800px) rotateY(0);
+  @include ie {
+    opacity: 1;
+  }
+}
+.flip-forward-leave{
+  transform: perspective(800px) rotateY(0deg);
+  @include ie {
+    opacity: 1;
+  }
+}
+.flip-forward-leave-to{
+  transform: perspective(800px) rotateY(-179.9deg);
+  @include ie {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,98 @@
+@mixin columns($area, $columns...) {
+  $grid-columns: "";
+  $grid-areas: "";
+  @for $i from 1 through length($columns) {
+    $col: nth($columns, $i);
+    $grid-columns: $grid-columns + "#{$col}fr ";
+    @if $i == 1 {
+      $grid-areas: $grid-areas + "area" + $i;
+    } @else {
+      $grid-areas: $grid-areas + " area" + $i;
+    }
+  }
+  display:grid;
+  grid-template-columns: unquote($grid-columns);
+  @if $area {
+    grid-template-areas: $grid-areas;
+  }
+}
+
+@mixin columns_percent($area, $columns...) {
+  $grid-columns: "";
+  $grid-areas: "";
+  $total: 0;
+  @for $i from 1 through length($columns) {
+    $total: $total + nth($columns, $i);
+  }
+  @for $j from 1 through length($columns) {
+    $col: nth($columns, $j);
+    $grid-columns: $grid-columns + (($col / $total) * 100) + "% ";
+    @if $j == 1 {
+      $grid-areas: $grid-areas + "area" + $j;
+    } @else {
+      $grid-areas: $grid-areas + " area" + $j;
+    }
+  }
+  display:grid;
+  grid-template-columns: unquote($grid-columns);
+  @if $area {
+    grid-template-areas: $grid-areas;
+  }
+}
+
+@mixin legacy_columns($columns...) {
+  $grid-columns: "";
+  @for $i from 1 through length($columns) {
+    $col: nth($columns, $i);
+    $grid-columns: $grid-columns + "#{$col}fr ";
+  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: unquote($grid-columns);
+  grid-template-columns: unquote($grid-columns);
+}
+
+@mixin legacy_columns_percent($area, $columns...) {
+  $grid-columns: "";
+  $total: 0;
+  @for $i from 1 through length($columns) {
+    $total: $total + nth($columns, $i);
+  }
+  @for $j from 1 through length($columns) {
+    $col: nth($columns, $j);
+    $grid-columns: $grid-columns + (($col / $total) * 100) + "% ";
+  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: unquote($grid-columns);
+  grid-template-columns: unquote($grid-columns);
+}
+
+@mixin item_location($col, $row: -1) {
+  $column: nth(coords, 1);
+  -ms-grid-column: $col;
+  grid-column: $col;
+  @if $row != -1 {
+    -ms-grid-row: $row;
+    grid-row: $row;
+  }
+}
+
+@mixin legacy_placement($columns, $rows: 1) {
+  @for $i from 1 through $columns {
+    $place: $columns + "n + " + $i;
+    &:nth-child(#{$place}) {
+      -ms-grid-column: $i;
+      grid-column: $i;
+      -ms-grid-row: 1;
+      grid-row: 1;
+    }
+    @for $j from 1 through $rows {
+      $placeRow: $columns + "n + " + ((($j - 1) * $columns) + $i);
+      &:nth-child(#{$placeRow}) {
+        -ms-grid-row: $j;
+        grid-row: $j;
+      }
+    }
+  }
+}

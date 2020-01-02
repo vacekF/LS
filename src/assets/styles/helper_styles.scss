@@ -1,0 +1,73 @@
+@import '../branding/branding';
+
+//Color
+@mixin horizontal-gradient($begin, $end) {
+  background-image: linear-gradient(to left, $begin, $end);
+}
+
+@mixin vertical-gradient($begin, $end) {
+  background-image: linear-gradient(to bottom, $begin, $end);
+}
+
+@function color($key) {
+  @if not map-has-key($colors, $key) {
+    @warn "Color: `#{$key}` not found.";
+  }
+  @return map-get($colors, $key);
+}
+
+//Margin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $margin-top * $top;
+  margin-right: $margin-right * $right;
+  margin-bottom: $margin-bottom * $bottom;
+  margin-left: $margin-left * $left;
+}
+
+//Padding
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $padding-top * $top;
+  padding-right: $padding-right * $right;
+  padding-bottom: $padding-bottom * $bottom;
+  padding-left: $padding-left * $left;
+}
+
+//Extras
+@mixin float-shadow () {
+  box-shadow:  1.5px 1.5px 4px 1px rgba(#000000, 0.25);
+}
+
+@mixin svg-fill($color) {
+  /deep/ .svg-container {
+    svg {
+      fill: $color;
+    }
+  }
+}
+
+@mixin svg-style {
+  /deep/ .svg-container {
+    svg {
+      @content;
+    }
+  }
+}
+
+@mixin close-x {
+  &:before{
+    font-weight: bold;
+    font-size: 0.8rem;
+    content: 'x';
+    position: absolute;
+    top: 0.1rem;
+    right: 0.3rem;
+    z-index: 2;
+  }
+}
+
+@mixin clear-btn {
+  appearnance: none;
+  border: none;
+  background: none;
+  outline: none;
+}

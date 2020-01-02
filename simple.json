@@ -1,0 +1,21 @@
+{
+  "title": "Simple Learning Framework",
+  "help": "https://github.com/GPStrategiesCorp/simple-learning",
+  "scripts": [
+    {
+      "label": "Install",
+      "command": "npm install",
+      "active": false
+    },
+    {
+      "label": "Develop",
+      "command": "node vue-cli-service serve",
+      "active": false
+    },
+    {
+      "label": "Publish",
+      "command": "node vue-cli-service build",
+      "active": false
+    }
+  ]
+}

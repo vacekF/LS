@@ -1,0 +1,61 @@
+{
+  "name": "simple-learning",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "reset-css": "^4.0.1",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vue-router-sync": "^0.1.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-standard": "^3.0.4",
+    "if-webpack-plugin": "^1.0.5",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "simple-core": "git+https://GPStrategies05-medev@dev.azure.com/GPStrategies05-medev/GPStrategies-SIMPLE/_git/simple-core",
+    "simple-editing": "git+https://GPStrategies05-medev@dev.azure.com/GPStrategies05-medev/GPStrategies-SIMPLE/_git/simple-editing",
+    "simple-server": "git+https://GPStrategies05-medev@dev.azure.com/GPStrategies05-medev/GPStrategies-SIMPLE/_git/simple-server",
+    "simple-settings": "git+https://GPStrategies05-medev@dev.azure.com/GPStrategies05-medev/GPStrategies-SIMPLE/_git/simple-settings",
+    "simple-assessment": "git+https://GPStrategies05-medev@dev.azure.com/GPStrategies05-medev/GPStrategies-SIMPLE/_git/simple-assessment",
+    "svg-inline-loader": "^0.8.0",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {
+      "eol-last": 0,
+      "camelcase": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

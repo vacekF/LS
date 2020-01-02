@@ -1,0 +1,15 @@
+.menu-open-enter-active, .menu-open-leave-active{
+  transition: transform 0.3s;
+}
+.menu-open-enter{
+  transform: translateY(-100%)
+}
+.menu-open-enter-to{
+  transform: translateY(0%)
+}
+.menu-open-leave{
+  transform: translateY(0%)
+}
+.menu-open-leave-to{
+  transform: translateY(-100%)
+}

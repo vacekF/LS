@@ -1,0 +1,15 @@
+.cross-fade-enter-active, .cross-fade-leave-active{
+  transition: opacity 0.5s;
+}
+.cross-fade-enter{
+  opacity: 0;
+}
+.cross-fade-enter-to{
+  opacity: 1;
+}
+.cross-fade-leave{
+  opacity: 1;
+}
+.cross-fade-leave-to{
+  opacity: 1;
+}
